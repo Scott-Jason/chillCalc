@@ -1,20 +1,128 @@
-
-
 body{
     margin: 0;
-}
-.calc{
-    background-color: green;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    position:relative;
+    background-image: url(backgroundPic.png);
+   
+    background-size: cover;
     
-  
 }
 
-#screen {
-   width: 50vw;
+.calculator{
+    z-index: 0;
+    position: absolute;
+    
+   
     background-color: black;
+    width: 410px;
+    height: 320px;
+    margin-bottom: 140px;
 }
+b{
+    font-size:larger;
+}
+span{
+    color:#39FF14;
+}
+.screen {
+    min-width: 350px;
+    height: 30px;
+    background-color: black;
+    color: #39FF14;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Monofonto;
+    
+    padding-top: 14px;
+}
+
+#total{
+    color: #39FF14;
+    
+}
+
+.display{
+    width: 410px;
+    height: 40px;
+    background-color:#1A4314;
+    text-align: center;
+    font-family: Monofonto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+hr{
+    margin: 0;
+    margin-top: -1px;
+    background-color: #39FF14;
+    height: 2px;
+    border-width: 0;
+}
+.boy{
+    height: 115px;
+    z-index: 0;
+    margin-left: 280px;
+    margin-top: 100px;
+}
+.pip{
+    z-index: 1;
+    margin-right: 70px;
+    opacity: 100%;
+}
+.buttons{
+    z-index: 2;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: absolute;
+    width: 300px;
+    margin-left: -78px;
+    margin-top: -80px;
+}
+
+.specialButtons{
+    z-index: 2;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: absolute;
+    width: 5px;
+    margin-left: 160px;
+    margin-top: -170px;
+}
+
+
+.num{
+    min-width: 60px;
+    font-family: Monofonto;
+    
+    min-height: 40px;
+    font-size: 25px;
+}
+
+.spec,.num{
+    color:#39FF14
+}
+
+.spec{
+    min-width: 100px;
+    height: 40px;
+    font-family: Monofonto;
+    font-size: 26px;
+}
+button{
+    background-color:black;
+    padding: 0;
+    border: none;
+    /* border:none for matte */
+}
+
+button:hover{
+    outline: 2px solid #39FF14;
+}
+
