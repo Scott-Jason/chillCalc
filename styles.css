@@ -39,10 +39,6 @@ span{
     padding-top: 14px;
 }
 
-#total{
-    color: #39FF14;
-    
-}
 
 .display{
     width: 410px;
@@ -54,6 +50,7 @@ span{
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    color: #39FF14;
 }
 
 hr{
