@@ -8,6 +8,16 @@ function sub(a,b){ return a-b;}
 function mult(a,b){return a*b;}
 function div(a,b){return a/b};
 
+const buttons = document.getElementsByClassName("num");
+const audio = new Audio();
+audio.src = "pipnoise.mp3";
+Array.from(buttons).forEach(button => {
+    // Add a click event listener to each button
+    button.addEventListener('click', () => {
+        audio.play();
+    });
+});
+
 const display = document.querySelector('#display');
 
 const num2 = document.getElementById('2');
